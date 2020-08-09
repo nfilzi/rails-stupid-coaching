@@ -1,0 +1,59 @@
+// Place all the styles related to the questions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;700&display=swap');
+
+body {
+  background-color: #f6f9fc;
+  font-family: 'Baloo Tamma 2', cursive;
+  quotes: '«' '»' "‹" "›"
+}
+
+.ask-form {
+  display: flex;
+
+  input[type="text"] {
+    border:       1px solid grey;
+    border-right: none;
+    padding:      0.5em;
+    font-size:    1.4em;
+    border-radius: 4px 0 0 4px;
+    outline:       none;
+  }
+
+  input[type="submit"] {
+    background-color: #337ab7;
+    color: white;
+    border: none;
+    padding: 1em;
+    border-radius: 0 4px 4px 0;
+    font-weight: bold;
+    font-size: 0.9em;
+  }
+}
+
+.quotes {
+  display:        flex;
+  flex-direction: column;
+}
+
+.quote {
+  padding: 1em;
+  margin-bottom: 1em;
+  border-left: 3px solid grey;
+
+  &.coach {
+    background-color: #fef9c7;
+  }
+
+  q {
+    font-size: 1.3em;
+  }
+
+  p {
+    font-style: italic;
+    margin: 0;
+    margin-top: 1em;
+  }
+}

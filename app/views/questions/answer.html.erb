@@ -1,0 +1,17 @@
+<div class="quotes">
+  <div class="quote">
+    <q>
+      <%= @question %>
+    </q>
+    <p>You</p>
+  </div>
+
+  <div class="quote coach">
+  <q>
+    <%= @coach_answer %>
+  </q>
+  <p>Your coach</p>
+  </div>
+</div>
+
+<%= link_to "Ask a new question", ask_path %>
